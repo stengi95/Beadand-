@@ -1,0 +1,203 @@
+#!/bin/bash
+clear
+echo "A programot készítette Stenger Márton"
+echo "Kérem válassza ki hogy milyen film műfajt szeret! :)"
+echo -e '\n'
+echo "A választáshoz írjon be egy számot a felsorolásból, majd nyomjon egy 'entert'. :D"
+echo -e '\n'
+echo "Nyomja meg a 'q'-t a kilépéshez!"
+echo -e '\n'
+
+mufaj=("Akció" "Animációs" "Bűnügyi" "Családi" "Dráma" "Dokumentum" "Életrajzi" "Fantasy" "Horror" "Kaland" "Politikai" "Romantikus" "Történelmi" "Tudományos-Fantasztikus" "Vígjáték")
+select faj in "${mufaj[@]}"
+do
+case $faj in
+"Akció")  echo "Ezek szerint ön az akció filmeket (is) szereti, itt az én kedvenc akciófilmem:"
+xdg-open https://youtube.com/watch?v=rKxcEVNVU-E
+echo "A film címe: Mad Max: A harag útja (2015)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/mad-max-a-harag-utja-mad-max-fury-road/movie-153998 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Animációs")  echo "Ezek szerint ön az animációs filmeket (is) szereti, itt az én kedvenc animációsfilmem:"
+xdg-open https://youtube.com/watch?v=8-_9n5DtKOc
+echo "A film címe: Wall-e"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/wall-e-wall-e/movie-153998 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Bűnügyi")  echo "Ezek szerint ön a bünügyi filmeket (is) szereti, itt az én kedvenc bünügyifilmem:"
+xdg-open https://youtube.com/watch?v=k8sRMQ5hSok
+echo "A film címe: Hetedik (Se7en)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/hetedik-se7en/movie-1045 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Családi")  echo "Ezek szerint ön a családi filmeket (is) szereti, itt az én kedvenc családifilmem:"
+xdg-open https://youtube.com/watch?v=nR5yMtGPhik
+echo "A film címe: Az oroszlánkirály (2019)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/mozi/az-oroszlankiraly-the-lion-king/movie-207304 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Dráma")  echo "Ezek szerint ön a dráma filmeket (is) szereti, itt az én kedvenc drámafilmem:"
+xdg-open https://youtube.com/watch?v=ccZl0drDpjE
+echo "A film címe: Ryan közlegény megmentése (1998)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/ryan-kozlegeny-megmentese-saving-private-ryan/movie-2154 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Dokumentum")  echo "Ezek szerint ön a dokumentum filmeket (is) szereti, itt az én kedvenc dokumentumfilmem:"
+xdg-open https://youtube.com/watch?v=RQBuPEVx80I
+echo "A film címe: Kellemetlen Igazság (2006)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/kellemetlen-igazsag-an-iconvenient-truth/movie-79159 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Életrajzi")  echo "Ezek szerint ön a életrajzi filmeket (is) szereti, itt az én kedvenc életrajzifilmem:"
+xdg-open https://youtube.com/watch?v=7OkSb65sVEc
+echo "A film címe: Az aszfalt királyai (2019)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/mozi/az-aszfalt-kiralyai-ford-v-ferrari-le-mans-66/movie-209968 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Fantasy")  echo "Ezek szerint ön a fantasy filmeket (is) szereti, itt az én kedvenc fantasyfilmem:"
+xdg-open https://youtube.com/watch?v=IRQSIx2QFHo
+echo "A film címe: A hobbit - Váratlak utazás"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/a-hobbit-varatlan-utazas-the-hobbit-an-unexpected-journey/movie-119742 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Horror")  echo "Ezek szerint ön a horror filmeket (is) szereti, itt az én kedvenc horrorfilmem:"
+xdg-open https://youtube.com/watch?v=ysGeZji9Wsw
+echo "A film címe: Démonok között (2013)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/demonok-kozott-the-conjuring/movie-139774 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Kaland")  echo "Ezek szerint ön a kaland filmeket (is) szereti, itt az én kedvenc kalandfilmem:"
+xdg-open https://youtube.com/watch?v=Enj8uqvVT4g
+echo "A film címe: Jumanji - Vár a dzsungel (2017)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/jumanji-var-a-dzsungel-jumanji-welcome-to-the-jungle/movie-180560 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Politikai")  echo "Ezek szerint ön a családi filmeket (is) szereti, itt az én kedvenc családifilmem:"
+xdg-open https://youtube.com/watch?v=I44GtvKsdUo
+echo "A film címe: V mint vérbosszú (2005)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/v-mint-verbosszu-v-for-vendetta/movie-75636 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Romantikus")  echo "Ezek szerint ön a romantikus filmeket (is) szereti, itt az én kedvenc romantikusfilmem:"
+xdg-open https://youtube.com/watch?v=RRviuLBiqhg
+echo "A film címe: Az 50 első randi (2004)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/az-50-elso-randi-50-first-dates/movie-57769 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Történelmi")  echo "Ezek szerint ön a történelmi filmeket (is) szereti, itt az én kedvenc történelmifilmem:"
+xdg-open https://youtube.com/watch?v=Q-b7B8tOAQU
+echo "A film címe: Gladiátor (2000)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/gladiator-gladiator/movie-50460 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Tudományos-Fantasztikus")  echo "Ezek szerint ön a sci-fi filmeket (is) szereti, itt az én kedvenc sci-fi-filmem:"
+xdg-open https://youtube.com/watch?v=aWHj6MNc0CA
+echo "A film címe: Zsivány Egyes - Egy Star Wars történet (2016)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/zsivany-egyes-egy-star-wars-tortenet-rogue-one-a-star-wars-story/movie-174471 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+"Vígjáték")  echo "Ezek szerint ön a vígjáték filmeket (is) szereti, itt az én kedvenc vígjátékfilmem:"
+xdg-open https://youtube.com/watch?v=J8lnu3iC-vg
+echo "A film címe: Trópusi vihar (2008)"
+echo "A leírását pedig gyorsan letölti a terminál:"
+curl https:/port.hu/adatlap/film/tv/tropusi-vihar-tropic-thunder/movie-93034 | grep "og:description" | cut -c41-
+echo -e '\n'
+echo "Ezen felül a terminál most megnyit egy böngésző ablakot."
+echo -e '\n'
+echo "Ha megnézte az előzetest, utána zárja be és választhat egy másik műfajt"
+echo "Ehhez nyomjon egy 'entert' majd írjon be egy számot a felsorolásból, majd ismét egy 'entert'."
+echo -e '\n' ;;
+
+
+esac
+
+read kilep
+case $kilep in
+q) clear
+ exit;;
+esac
+done
